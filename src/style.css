@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal {
+  background-color: #fff;
+  margin: 20px auto; /* Center the modal horizontally */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: block; /* Ensures block-level display for centering */
+}
+
+#modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#modal-body {
+  display: flex;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+#close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #999;
+  cursor: pointer;
+}
+
+#close-btn:hover {
+  color: #666;
+}
+
+form {
+  margin-top: 20px;
+  min-width: 320px;
+}
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin: 5px 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #007bff, #2ab2e8);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0056b3, #87ceeb);
+}
+
+button.cancel-button {
+  background: linear-gradient(to right, #d40000, #ee6a6a);
+}
+
+button.cancel-button:hover {
+  background: linear-gradient(to right, #f53d3d, #ffc8c8);
+}
+
+#focus-info {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  width: 320px;
+  margin: 20px 0 60px 10px;
+}
+
+#focus-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+#focus-tag,
+#focus-html {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#focus-tag::before,
+#focus-html::before {
+  content: "> ";
+  color: #007bff; /* Adjust the color as needed */
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
